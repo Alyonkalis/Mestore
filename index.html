@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- slick style -->
-	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-  	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
 		<nav class="navigation header__navigation">
 			<div class="navigation__wrapper container">
 				<a href="#" class="navigation__logo">MeStore</a>
-			<ul class="site-navigation navigation__site-navigation">
+			<ul class="site-navigation">
 				<li class="site-navigation__item">
 					<a href="#">Номе</a>
 				</li>
@@ -43,12 +43,16 @@
 					<a href="#">Page</a>
 				</li>
 			</ul>
-			<ul class="user-navigation navigation__user-navigation">
+			<ul class="user-navigation">
 				<li class="user-navigation__item">
 					<a href="#">
 						<i class="fa fa-search"></i>
 						<span class="visually-hidden">Search</span>
 					</a>
+
+					<div class="search">
+						<input type="serch">
+					</div>
 				</li>
 				<li class="user-navigation__item">
 					<a href="#">
@@ -66,9 +70,9 @@
 			</div>
 		</nav>
 		<div class="container">
-			<div class="banner header__banner">
+			<div class="banner">
 				<h1 class="banner__title">Fashion<br><span class="banner__title--red">carnival</span></h1>
-				<span class="banner__year">2022</span>
+				<p class="banner__year">2022</p>
 				<p class="banner__description">
 					Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.
 				</p>
@@ -88,19 +92,19 @@
 		<section class="features container">
 			<h2 class="visually-hidden">Features</h2>
 			<ul class="features__list">
-				<li class="features-item features-item--plane features__item">
+				<li class="features-item features-item--plane">
 					<h3 class="features-item__title">Free Shipping</h3>
 					<p class="features-item__description">
 						With €50 or more orders
 					</p>
 				</li>
-				<li class="features-item features-item--clock features__item">
+				<li class="features-item features-item--clock">
 					<h3 class="features-item__title">Free Refund</h3>
 					<p class="features-item__description">
 						100% Refund Within 3 days
 					</p>
 				</li>
-				<li class="features-item features-item--life-ring features__item">
+				<li class="features-item features-item--life-ring">
 					<h3 class="features-item__title">Support 24.7</h3>
 					<p class="features-item__description">
 						Call us anytime you want
@@ -113,20 +117,20 @@
 
 		<section class="product-banners">
 			<h2 class="visually-hidden">Product banners</h2>
-			<ul class="product-banners__list">
-				<li class="product-banners-item product-banners__item">
-					<h3 class="product-banners-item__title">Fashion<br><span class="product-banners-item__title--red">Carnival</span></h3>
-					<p class="product-banners-item__description">
+			<ul class="banners__list">
+				<li class="banners-item">
+					<h3 class="banners-item__title">Fashion<br><span class="banners-item__title--red">Carnival</span></h3>
+					<p class="banners-item__description">
 						Lorem Ipsum. Proin gravida nibh velit it’s a cold world.
 					</p><br>
-					<a href="#" class="button product-banners-item__button">Shop Now</a>
+					<a href="#" class="button banners-item__button">Shop Now</a>
 				</li>
-				<li class="product-banners-item product-banners__item">
-					<h3 class="product-banners-item__title">Fashion<br><span class="product-banners-item__title--red">Carnival</span></h3>
-					<p class="product-banners-item__description">
+				<li class="banners-item">
+					<h3 class="banners-item__title">Fashion<br><span class="banners-item__title--red">Carnival</span></h3>
+					<p class="banners-item__description">
 						Lorem Ipsum. Proin gravida nibh velit it’s a cold world out.
 					</p><br>
-					<a href="#" class="button product-banners-item__button">Shop Now</a>
+					<a href="#" class="button banners-item__button">Shop Now</a>
 				</li>
 			</ul>
 		</section>
@@ -140,10 +144,10 @@
 			</p>
 			
 			<!-- slider -->
-			<div class="slides">
+			<div class="">
 
-				<ul class="slide product__list">
-					<li class="product-item product__item">
+				<div class="slide product__list">
+					<div class="product-item">
 						<a href="#">
 							<img src="img/product1.jpg" alt="Orange T-shirt" width="" height="">
 							<h3 class="product-item__title">Orange T-shirt</h3>
@@ -170,9 +174,9 @@
 							<del class="price--old">$74.00</del>
 							<a href="#" class="price--new">$69.00</a>  
 						</p>
-					</li>
+					</div>
 
-					<li class="product-item product__item">
+					<div class="product-item">
 						<a href="#">
 							<img src="img/product2.jpg" alt="Green sweater" width="" height="">
 							<h3 class="product-item__title">Green sweater</h3>
@@ -200,9 +204,9 @@
 							<del class="price--old">$114.00</del>
 							<a href="#" class="price--new">$92.00</a>  
 						</p>
-					</li>
+					</div>
 
-					<li class="product-item product__item">
+					<div class="product-item">
 						<a href="#">
 							<img src="img/product3.jpg" alt="Orange trousers" width="" height="">
 							<h3 class="product-item__title">Orange trousers</h3>
@@ -230,9 +234,9 @@
 							<del class="price--old">$68.00</del>
 							<a href="#" class="price--new">$48.00</a>  
 						</p>
-					</li>
+					</div>
 
-					<li class="product-item product__item">
+					<div class="product-item">
 						<a href="#">
 							<img src="img/product4.jpg" alt="White dress" width="" height="">
 							<h3 class="product-item__title">White dress</h3>
@@ -259,8 +263,8 @@
 							<del class="price--old">$70.00</del>
 							<a href="#" class="price--new">$53.00</a>  
 						</p>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
 			<!-- /.slides -->
 				
@@ -291,7 +295,9 @@
 						Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.This is Photoshop's version of Lorem Ipsum.
 					</p>
 					<div class="news-item__wrapper-activity">
-						<a href="#" class="button news-item__button">Read More</a>
+						<div class="news-item__button">
+							<a href="#" class="button">Read More</a>
+						</div>
 						<div class="news-item__activity">
 							<a href="#" class="fa fa-heart"></a>
 							<a href="#" class="fa fa-comment"></a>
@@ -310,7 +316,9 @@
 						Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.This is Photoshop's version of Lorem Ipsum.
 					</p>
 					<div class="news-item__wrapper-activity">
-						<a href="#" class="button news-item__button">Read More</a>
+						<div class="news-item__button">
+							<a href="#" class="button">Read More</a>
+						</div>
 						<div class="news-item__activity">
 							<a href="#" class="fa fa-heart"></a>
 							<a href="#" class="fa fa-comment"></a>
@@ -329,7 +337,9 @@
 						Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.This is Photoshop's version of Lorem Ipsum.
 					</p>
 					<div class="news-item__wrapper-activity">
-						<a href="#" class="button news-item__button">Read More</a>
+						<div class="news-item__button">
+							<a href="#" class="button">Read More</a>
+						</div>
 						<div class="news-item__activity">
 							<a href="#" class="fa fa-heart"></a>
 							<a href="#" class="fa fa-comment"></a>
@@ -349,7 +359,9 @@
 
 			<ul class="brands-list">
 				<li class="brands-item">
-					<img src="img/product-brands1.jpg" alt="White dress" width="91" height="95">
+					<div>
+						<img src="img/product-brands1.jpg" alt="White dress" width="91" height="95">
+					</div>
 					<div class="brands-list__wrapper-description">
 						<a href="#">
 							<h3 class="brands-item__title">White dress</h3>
@@ -382,7 +394,9 @@
 
 			<ul class="brands-list">
 				<li class="brands-item">
-					<img src="img/product-brands2.jpg" alt="White dress" width="91" height="95">
+					<div>
+						<img src="img/product-brands2.jpg" alt="White dress" width="91" height="95">
+					</div>
 					<div class="brands-list__wrapper-description">
 						<a href="#">
 							<h3 class="brands-item__title">White dress</h3>
@@ -417,7 +431,9 @@
 
 			<ul class="brands-list">
 				<li class="brands-item">
-					<img src="img/product-brands3.jpg" alt="White dress" width="91" height="95">
+					<div>
+						<img src="img/product-brands3.jpg" alt="White dress" width="91" height="95">
+					</div>
 					<div class="brands-list__wrapper-description">
 						<a href="#">
 							<h3 class="brands-item__title">White dress</h3>
@@ -449,7 +465,9 @@
 			</ul>
 			<ul class="brands-list">
 				<li class="brands-item">
-					<img src="img/product-brands2.jpg" alt="White dress" width="91" height="95">
+					<div>
+						<img src="img/product-brands2.jpg" alt="White dress" width="91" height="95">
+					</div>
 					<div class="brands-list__wrapper-description">
 						<a href="#">
 							<h3 class="brands-item__title">White dress</h3>
@@ -487,7 +505,9 @@
 			<h3 class="brands__brands-title">Our brands</h3>
 			<ul class="brands-list">
 				<li class="brands-item">
-					<img src="img/product-brands1.jpg" alt="White dress" width="91" height="95">
+					<div>
+						<img src="img/product-brands1.jpg" alt="White dress" width="91" height="95">
+					</div>
 					<div class="brands-list__wrapper-description">
 						<a href="#">
 							<h3 class="brands-item__title">White dress</h3>
@@ -519,7 +539,9 @@
 			</ul>
 			<ul class="brands-list">
 				<li class="brands-item">
-					<img src="img/product-brands2.jpg" alt="White dress" width="91" height="95">
+					<div>
+						<img src="img/product-brands2.jpg" alt="White dress" width="91" height="95">
+					</div>
 					<div class="brands-list__wrapper-description">
 						<a href="#">
 							<h3 class="brands-item__title">White dress</h3>
@@ -551,7 +573,9 @@
 			</ul>
 			<ul class="brands-list">
 				<li class="brands-item">
-					<img src="img/product-brands3.jpg" alt="White dress" width="91" height="95">
+					<div>
+						<img src="img/product-brands3.jpg" alt="White dress" width="91" height="95">
+					</div>
 					<div class="brands-list__wrapper-description">
 						<a href="#">
 							<h3 class="brands-item__title">White dress</h3>
@@ -583,7 +607,9 @@
 			</ul>
 			<ul class="brands-list">
 				<li class="brands-item">
-					<img src="img/product-brands2.jpg" alt="White dress" width="91" height="95">
+					<div>
+						<img src="img/product-brands2.jpg" alt="White dress" width="91" height="95">
+					</div>
 					<div class="brands-list__wrapper-description">
 						<a href="#">
 							<h3 class="brands-item__title">White dress</h3>
@@ -617,56 +643,58 @@
 	</section>
 
 	<!-- brands logo -->
-	<div class="brands-logo-bg"></div>
-	<section class="brands-logo container">
+	<div class="logo-bg"></div>
+	<section class="logo container">
 		<h2 class="visually-hidden">Brends logo</h2>
-		<ul class="brands-logo__list">
-			<li class="brands-logo__item">
+		<ul class="logo__list">
+			<li class="logo__item">
 				<a href="#"><img src="img/brand1.png" alt="brand1" width="111" height="77"></a>
 			</li>
-			<li class="brands-logo__item">
+			<li class="logo__item">
 				<a href="#"><img src="img/brand2.png" alt="brand2" width="100" height="100"></a>
 			</li>
-			<li class="brands-logo__item">
+			<li class="logo__item">
 				<a href="#"><img src="img/brand3.png" alt="brand3" width="111" height="76"></a>
 			</li>
-			<li class="brands-logo__item">
+			<li class="logo__item">
 				<a href="#"><img src="img/brand4.png" alt="brand4" width="104" height="90"></a>
 			</li>
-			<li class="brands-logo__item">
+			<li class="logo__item">
 				<a href="#"><img src="img/brand5.png" alt="brand5" width="110" height="64"></a>
 			</li>
-			<li class="brands-logo__item">
+			<li class="logo__item">
 				<a href="#"><img src="img/brand2.png" alt="brand6" width="100" height="100"></a>
 			</li>
 		</ul>
 	</section>
 
-	<!-- main footer -->
+	<!-- footer -->
 
 	<footer class="footer">
 		<div class="footer__wrapper container">
-			<section class="about-company footer__about-company">
-				<h2 class="about-company__title">About company</h2>
-				<p class="about-company__description">
+
+			<section class="about">
+				<h2 class="about__title">About company</h2>
+				<p class="about__description">
 					This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.
 				</p>
-				<ul class="about-company__list">
-					<li class="about-company__item">
+				<ul class="about__list">
+					<li class="about__item">
 						<i class="fa fa-map-marker"></i>
 						<span>0123  Main Road, Your City, NY 123456</span>
 					</li>
-					<li class="about-company__item">
+					<li class="about__item">
 						<i class="fa fa-phone"></i>
 						<span>(000) 2345 - 6789</span>
 					</li>
-					<li class="about-company__item">
+					<li class="about__item">
 						<i class="fa fa-envelope"></i>
 						<span>info@psdfreebies.com</span>
 					</li>
 				</ul>
 			</section>
-			<section class="my-account footer__my-account">
+
+			<section class="my-account">
 				<h2 class="my-account__title">My Account</h2>
 				<ul class="my-account__list">
 					<li class="my-account__item"><a href="#">My account</a></li>
@@ -676,16 +704,18 @@
 					<li class="my-account__item"><a href="#">Checkout</a></li>
 				</ul>
 			</section>
-			<section class="product footer__product">
-				<h2 class="product__title">Product</h2>
-				<ul class="product__list">
-					<li class="product__item"><a href="#">About us</a></li>
-					<li class="product__item"><a href="#">Blog</a></li>
-					<li class="product__item"><a href="#">Contact</a></li>
-					<li class="product__item"><a href="#">Services</a></li>
-					<li class="product__item"><a href="#">Portfolio</a></li>
+
+			<section class="product-menu">
+				<h2 class="product-menu__title">Product</h2>
+				<ul class="product-menu__list">
+					<li class="product-menu__item"><a href="#">About us</a></li>
+					<li class="product-menu__item"><a href="#">Blog</a></li>
+					<li class="product-menu__item"><a href="#">Contact</a></li>
+					<li class="product-menu__item"><a href="#">Services</a></li>
+					<li class="product-menu__item"><a href="#">Portfolio</a></li>
 				</ul>
 			</section>
+
 			<div class="footer__block-right">
 				<section class="follow-us footer__follow-us">
 					<h2 class="follow-us__title">Follow-us</h2>
@@ -740,7 +770,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<ul class="other-navigation footer__other-navigation">
+			<ul class="other-navigation">
 				<li class="other-navigation__item">
 					<a href="#">Site map</a>
 				</li>

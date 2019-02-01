@@ -51,7 +51,7 @@ body {
   font-size: 16px;
   color: #000;
 
-  min-width: 1170px;
+  min-width: 320px;
 
   margin: 0;
   padding: 0;
@@ -60,6 +60,11 @@ body {
 a {
   text-decoration: none;
   color: #000;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -146,10 +151,6 @@ a {
   margin-right: auto;
 }
 
-.navigation__site-navigation {
-  margin-right: 18px;
-}
-
 .site-navigation,
 .user-navigation {
   list-style: none;
@@ -157,6 +158,10 @@ a {
 
   display: flex;
   flex-wrap: wrap; 
+}
+
+.site-navigation {
+  margin-right: 18px;
 }
 
 .site-navigation a,
@@ -194,6 +199,11 @@ a {
   font-size: 20px;
 }
 
+.search {
+  position: absolute;
+  display: none;
+}
+
 .banner {
   font-family: 'Montserrat-ExtraBold';
   text-transform: uppercase;
@@ -220,9 +230,8 @@ a {
   color: #222222;
   letter-spacing: 1.825em;
 
-  display: inline-block;
   margin: 0 auto;
-  width: 400px;
+  padding-left: 100px;
 }
 
 .banner__description {
@@ -257,7 +266,7 @@ a {
 
 .features {
   margin-top: -1160px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .features__list {
@@ -268,6 +277,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+}
+
+.features-item {
+  width: 32%;
 }
 
 .features-item:before {
@@ -313,11 +326,11 @@ a {
 
 /*product banners*/
 
-.product-banners {
+.banners {
   margin-bottom: 100px;
 }
 
-.product-banners__list {
+.banners__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -327,11 +340,11 @@ a {
   margin: 0;
 }
 
-.product-banners-item {
+.banners-item {
   background: url(../img/banner1.jpg);
   background-repeat: no-repeat;
 
-  width: 536px;
+  width: 45%;
   height: 292px;
 
   position: relative;
@@ -341,12 +354,12 @@ a {
   box-sizing: border-box;
 }
 
-.product-banners-item:nth-child(2) {
+.banners-item:nth-child(2) {
   background: url(../img/banner2.jpg);
   background-repeat: no-repeat;
 }
 
-.product-banners-item__title {
+.banners-item__title {
   font-size: 48px;
   font-family: 'Montserrat-ExtraBold';
   line-height: 40px;
@@ -355,11 +368,11 @@ a {
   margin-bottom: 10px;
 }
 
-.product-banners-item__title--red {
+.banners-item__title--red {
   color: #f9236f;
 }
 
-.product-banners-item__description {
+.banners-item__description {
   margin: 0;
 
   display: inline-block;
@@ -369,7 +382,7 @@ a {
   line-height: 22px;
 }
 
-.product-banners-item__button {
+.banners-item__button {
   bottom: 30px;
   position: absolute;
 }
@@ -388,12 +401,14 @@ a {
 
   margin: 0;
   margin-bottom: 10px;
+  margin-top: 60px;
 }
 
 .product__description {
   text-align: center;
 
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .product__list {
@@ -403,9 +418,14 @@ a {
 
   padding: 0;
 
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.product-item {
+  width: 20%;
 }
 
 .product-item__title {
@@ -454,6 +474,10 @@ a {
 
 .product-item__rating {
   margin-bottom: -5px;
+}
+
+.rating__item   {
+  width: 20%;
 }
 
 .rating__item--current {
@@ -546,7 +570,7 @@ a {
 }
 
 .news-item {
-  width: 360px;
+  width: 32%;
   overflow: hidden;
   background-color: #fff;
 
@@ -556,9 +580,10 @@ a {
 }
 
 .news-item__wrapper {
-  width: 300px;
   margin: 0 auto;
   margin-top: 30px;
+
+  padding: 0 20px;
 }
 
 
@@ -587,14 +612,14 @@ a {
 }
 
 .news-item__wrapper-activity {
-  position: absolute;
-
   bottom: 0px;
   margin-bottom: 30px;
 
   display: flex;
   justify-content: space-between;
-  width: 300px;
+
+  position: absolute;
+  width: 85%;
 }
 
 .news-item__activity {
@@ -613,6 +638,10 @@ a {
 
 .news-item__activity a:active {
   color: rgba(249,35,73,0.2);
+}
+
+.news-item__button a {
+  display: inline-block;
 }
 
 .fa-heart {
@@ -641,6 +670,7 @@ a {
 .brands {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding: 50px 30px 50px;
   background-color: #fff;
@@ -650,9 +680,10 @@ a {
   margin-top: -740px;
 }
 
-.brands__wrapper-list {
-  width: 356px;
+.brands>div {
+  width: 31%;
 }
+
 
 .brands__brands-title {
   font-family: 'Montserrat-Black';
@@ -673,14 +704,20 @@ a {
 }
 
 .brands-list__wrapper-description {
-  margin-left: 30px;
+  width: 60%;
 }
+
+.brands-list__wrapper-description .rating {
+  margin: 0;
+}
+
 
 .brands-item {
   padding: 20px 0;
   border-bottom: 1px solid #c2c2c2;
 
   display: flex;
+  justify-content: space-between;
 }
 
 .brands-item__title {
@@ -703,7 +740,7 @@ a {
 
 .brands-item__price {
   margin: 0;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .brands-item__price--old {
@@ -724,9 +761,13 @@ a {
   color: #dd2142;
 }
 
+.banner-sale {
+  max-width: 312px;
+}
+
 /*brands logo*/
 
-.brands-logo-bg {
+.logo-bg {
   background-color: #eee;
 
   display: block;
@@ -737,11 +778,11 @@ a {
   z-index: -1;
 }
 
-.brands-logo {
+.logo {
   margin-top: -300px;
 }
 
-.brands-logo__list {
+.logo__list {
   list-style: none;
   padding: 0;
 
@@ -751,17 +792,7 @@ a {
   margin: 60px 0;
 }
 
-.brands-logo__item:hover,
-.brands-logo__item:focus {
-  opacity: 0.5;
-}
-
-.brands-logo__item:active {
-  opacity: 0.1;
-}
-
-
-/*main footer*/
+/*footer*/
 
 .footer {
   background-image: url(../img/bg-footer.jpg);
@@ -770,7 +801,7 @@ a {
   background-position: center top; 
 
   color: #fff;
-  padding: 60px 30px;
+  padding: 60px 0px;
 }
 
 .footer a {
@@ -799,17 +830,17 @@ a {
   margin-bottom: 50px;
 }
 
-.about-company {
-  width: 320px;
+.about {
+  width: 25%;
   font-size: 15px;
   line-height: 24px; 
 }
 
-.about-company__item i {
+.about__item i {
   margin-right: 10px;
 }
 
-.about-company__item span {
+.about__item span {
   line-height: 30px;
 }
 
@@ -818,16 +849,22 @@ a {
   font-size: 20px;
 }
 
-.my-account__item, .product__item {
+.my-account, .product-menu {
+  width: 17%;
+}
+
+.my-account__item, .product-menu__item {
   line-height: 35px;
+}
+
+.footer__block-right {
+  width: 30%;
 }
 
 .follow-us__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  width: 280px;
 }
 
 .follow-us__item span {
@@ -897,3 +934,79 @@ a {
 }
 
 
+
+/*-----Extra-Large-----*/
+
+@media screen and (max-width: 1190px) {
+  .container {
+    width: 90%;
+  }
+
+  .banner__title {
+    font-size: 100px;
+  }
+
+  .banner__year {
+    padding-left: 110px;
+  }
+}
+
+
+/*-----Large-----*/
+@media screen and (max-width: 992px) {
+  .site-navigation {
+    display: none;
+  }
+
+  .banner {
+    width: 60%;
+  }
+
+  .banner__title {
+    font-size: 90px;
+  }
+
+  .banner__year {
+    font-size: 40px;
+    padding-left: 70px;
+  }
+}
+
+
+/*-----Medium-----*/
+@media screen and (max-width: 900px) {
+  .banner__title {
+    font-size: 75px;
+  }
+
+  .banner__year {
+    font-size: 35px;
+  }
+
+  .features-item__title {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -20px;
+  }
+
+  .news-item {
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  
+  .news-item__wrapper-activity {
+    flex-direction: column;
+  }
+}
+
+
+/*-----Medium-----*/
+@media screen and (max-width: 768px) {
+  .news__list {
+    flex-direction: column;
+  }
+
+  .news-item {
+    width: 100%;
+  }
+}

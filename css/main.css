@@ -136,7 +136,7 @@ img {
   background-repeat: no-repeat;
   background-color: #bae9ff;
 
-  min-height: 1000px;
+  min-height: 768px;
   max-width: 2700px;
   margin: 0 auto;
 
@@ -220,6 +220,7 @@ img {
 .banner__wrapper {
   top: 50%; 
   transform: translateY(-50%); 
+  left: 5%;
   position: absolute;
 }
 
@@ -228,7 +229,7 @@ img {
   text-transform: uppercase;
   text-align: center;
 
-  width: 600px;
+  width: 60%;;
 }
 
 .banner__title{
@@ -249,7 +250,7 @@ img {
   letter-spacing: 1.825em;
 
   margin: 0 auto;
-  padding-left: 100px;
+  padding-left: 80px;
 }
 
 .banner__description {
@@ -521,7 +522,17 @@ img {
 
 .slick-next::before,
 .slick-prev::before {
-  display: none;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .slick-dots {
@@ -531,12 +542,21 @@ img {
 .slick-dots li button::before {
   content: "\f0d9" !important;
   font-family: fontawesome;
-  line-height: 22px;
-  font-size: 15px;
-  width: 22px;
-  height: 22px;
+  line-height: 22px !important;
+  font-size: 15px !important;
+
+  width: 22px !important;
+  height: 22px !important;
   border-radius: 50%;
+
   background-color: #cacaca;
+  color: #fff !important;
+
+  cursor: pointer !important;
+}
+
+.slick-dots li:nth-child(2) button::before {
+  transform: rotate(180deg) !important;
 }
 
 .slick-dots li.slick-active button::before {
@@ -737,6 +757,11 @@ img {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.brands-item__image {
+  margin-right: 10px;
 }
 
 .brands-item__title {
@@ -974,9 +999,6 @@ img {
     font-size: 100px;
   }
 
-  .banner__year {
-    padding-left: 110px;
-  }
 }
 
 
@@ -997,6 +1019,16 @@ img {
   .banner__year {
     font-size: 40px;
     padding-left: 70px;
+  }
+
+  .banners__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banners-item {
+    margin-bottom: 30px;
+    width: 70%;
   }
 
   .logo__item {

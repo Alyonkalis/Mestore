@@ -408,8 +408,7 @@ img {
 
 /*featured product*/
 .product {
-  padding-bottom: 40px;
-  margin-bottom: 60px;
+  padding-bottom: 90px;
 }
 
 .product__title {
@@ -563,7 +562,6 @@ img {
   background-color: #f92357 !important;
 }
 
-
 /*news*/
 
 .wrapper-news {
@@ -573,15 +571,10 @@ img {
   background-color: #efefef;
   background-size: cover;
 
-  height: 885px;
-  margin-top: -108px;
-
+  padding-top: 130px;
+  margin-top: -60px;
+  padding-bottom: 180px;
   z-index: 1;
-}
-
-.news {
-  margin-top: -760px;
-  margin-bottom: 80px;
 }
 
 .news__title {
@@ -703,7 +696,7 @@ img {
   display: block;
 
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .brands {
@@ -716,7 +709,8 @@ img {
 
   box-sizing: border-box;
 
-  margin-top: -740px;
+  position: relative;
+  z-index: 2;
 }
 
 .brands>div {
@@ -815,15 +809,17 @@ img {
   background-color: #eee;
 
   display: block;
-  height: 400px;
-  margin-top: -95px;
+  padding-top: 160px;
+  padding-bottom: 60px;
+
 
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .logo {
-  margin-top: -300px;
+  
+  
 }
 
 .logo__list {
@@ -834,7 +830,8 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin: 60px 0;
+  margin-top: -85px;
+  padding-top: 160px;
 }
 
 .logo__item {

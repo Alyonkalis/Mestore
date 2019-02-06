@@ -1,4 +1,4 @@
-var buttonSearch = document.querySelector('.user-navigation__item--search'),
+var buttonSearch = document.querySelector('.fa-search'),
 	menuSearch = document.querySelector('.search');
 
 buttonSearch.addEventListener("click", function(){                //слушаем клик по кнопке

@@ -1100,6 +1100,13 @@ img {
   .header {
     min-height: 600px;
   }
+  .banner__title {
+    font-size: 60px;
+  }
+
+  .banner__year {
+    font-size: 30px;
+  }
 
   .features__list {
     flex-direction: column;
@@ -1139,11 +1146,161 @@ img {
     display: none;
   }
 
+  .brands  {
+    margin-top: -185px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about,
+  .my-account,
+  .product-menu,
+  .follow-us,
+  .footer__block-right {
+    width: 100%;
+  }
+
+  .my-account__list,
+  .product-menu__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    font-size: 14px;
+  }
+
+  .my-account__item,
+  .product-menu__item {
+    padding: 0 10px;
+  }
+
+  .follow-us__wrapper {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .footer ul.follow-us__list {
+    padding-right: 30px;
+  }
+
+  .footer ul.follow-us__list:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .payment__list {
+    justify-content: center;
+  }
 }
+
+
+@media screen and (max-width: 670px) {
+
+  .product__title {
+    margin-top: 30px;
+  }
+
+  .wrapper-news {
+    padding-top: 100px;
+  }
+
+  .banner__year {
+    font-size: 25px;
+    padding-left: 40px;
+  }
+}
+
 
 /*-----Medium-----*/
 @media screen and (max-width: 576px) {
 
+  .banner__title {
+      font-size: 50px;
+    }
+
+  .banner__year {
+    font-size: 20px;
+    letter-spacing: 1.5em;
+  }
+
+  .banner__description {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+
+  .banners-item {
+    width: 100%
+  }
+
+  .banner-sale {
+    display: none;
+  }
+
+  .brands {
+    flex-direction: row;
+  }
+
+  .brands__wrapper-list:nth-child(2) {
+    display: block;
+  }
+
+  .brands__brands-title {
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  .logo-bg {
+    padding-top: 130px;
+    padding-bottom: 30px;
+  }
+
 }
 
+@media screen and (max-width: 450px) {
+  
+  .banner__title {
+    font-size: 40px;
+  }
+
+  .banner__year {
+    letter-spacing: 0.7em;
+    padding-left: 20px;
+  }
+
+  .brands__wrapper-list:nth-child(2) {
+    display: none;
+  }
+
+  .brands__wrapper-list {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .brands>div {
+    width: 90%;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 385px) {
+
+  .product__title {
+    margin-top: 0;
+  }
+  
+  .banner__title {
+    font-size: 35px;
+  }
+
+  .other-navigation__item {
+    padding: 0 10px;
+  }
+
+}
 

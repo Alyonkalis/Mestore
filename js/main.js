@@ -5,6 +5,7 @@ buttonSearch.addEventListener("click", function(){                //слушае
     if(menuSearch.classList.contains('open')){ 
         menuSearch.classList.remove('open');                      //удаляем класс overflow у body
     } else {                                                     //если нет класса open
-        menuSearch.classList.add('open');                         //добавляем класс overflow для body
+        menuSearch.classList.add('open'),
+        menuSearch.querySelector('input').focus();               //фокус инпуту в поиске
     }
 });

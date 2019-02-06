@@ -545,23 +545,8 @@ img {
 .slick-next::before,
 .slick-prev::before {
   position: absolute;
+  bottom: -290px;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.slick-dots {
-  bottom: -52px !important;
-}
-
-.slick-dots li button::before {
   content: "\f0d9" !important;
   font-family: fontawesome;
   line-height: 22px !important;
@@ -575,15 +560,29 @@ img {
   color: #fff !important;
 
   cursor: pointer !important;
+
 }
 
-.slick-dots li:nth-child(2) button::before {
+.slick-prev::before {
+  left: 585px;
+}
+
+.slick-next::before {
+  right: 585px;
   transform: rotate(180deg) !important;
 }
 
-.slick-dots li.slick-active button::before {
+.slick-prev::hover,
+.slick-prev::focus,
+.slick-next::hover,
+.slick-next::focus {
   background-color: #f92357 !important;
 }
+
+.slick-dots {
+  display: none !important;
+}
+
 
 /*news*/
 
@@ -1267,8 +1266,8 @@ img {
   }
 
   .banner__year {
-    letter-spacing: 0.7em;
-    padding-left: 20px;
+    letter-spacing: 0; 
+    padding-left: 0;
   }
 
   .brands__wrapper-list:nth-child(2) {
@@ -1282,9 +1281,7 @@ img {
 
   .brands>div {
     width: 90%;
-  }
-
-  
+  } 
 
 }
 

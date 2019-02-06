@@ -542,10 +542,25 @@ img {
 
 /*slider style*/
 
+.slick-list {
+  position: relative;
+}
+
+.slick-prev {
+  position: absolute !important;
+  top: 110% !important;
+  left: 560px !important;
+}
+
+.slick-next {
+  position: absolute !important;
+  top: 110% !important;
+  right: 560px !important;
+}
+
 .slick-next::before,
 .slick-prev::before {
   position: absolute;
-  bottom: -290px;
 
   content: "\f0d9" !important;
   font-family: fontawesome;
@@ -560,15 +575,9 @@ img {
   color: #fff !important;
 
   cursor: pointer !important;
-
-}
-
-.slick-prev::before {
-  left: 585px;
 }
 
 .slick-next::before {
-  right: 585px;
   transform: rotate(180deg) !important;
 }
 
